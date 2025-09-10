@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarPox</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css" media="screen" and (max-width: 800px)>
+</head>
+<body>
+    <header>
+        <h1 class="title">Bem Vindo<br>Ao<br>CarPox</h1>
+        <p class="title">A Maior Distribuidora do País</p>
+    </header>
+    <main>
+        <h1 class="title">Fazer Login</h1>
+        <form action="data/data.txt" method="post">
+            <p id="pemail" class="title"><label for="iemail">Email <input type="email" id="iemail" name="email" placeholder="seuemail.aqui@gmail.com" required></label></p>
+            <p id="psenha" class="title"><label for="isenha">Senha <input type="password" id="isenha" name="senha" placeholder="**********" minlength="8" required></label></p>
+            <input id="enviar" class="botao" type="submit" value="Entrar">
+            <input  id="reset" class="botao" type="reset" value="Limpar">
+            <div id="checkbox">
+                <p id="psalvar" class="linha"><label for="isalvar">Salvar dados 
+                <input type="checkbox" id="isalvar" name="salvar"></label></p>
+                <p id="probo" class="linha"><label for="irobo">Não sou um robô <input type="checkbox" id="irobo" name="naorobo" required></label></p>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p id="p1">Logue Também</p>
+        <div id="logos">
+            <a  href="https://www.google.com/webhp?hl=pt-BR&sa=X&ved=0ahUKEwiDzOGsoNiOAxUcDrkGHR4CJEQQPAgI" target="_blank" rel="external"><img class="llogo" src="image/google.svg" alt="Login com Goole"></a>
+            <a  href="https://www.apple.com/br" target="_blank" rel="external"><img class="llogo" src="image/apple.svg" alt="Login com Apple"></a>
+        </div>
+        <address id="p2">
+            <small>Site criado por David "Hawize" Richard • <a href="mailto:hawize@email.com">Contato</a></small>
+        </address>
+    </footer>
+</body>
+</html>

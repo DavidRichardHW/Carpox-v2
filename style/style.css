@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+:root{
+    /*font*/
+        --font1: 'Courier New', Courier, monospace;
+        --font2: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+    /*color*/
+        --color1: rgb(165, 237, 247);
+        --color2: rgb(113, 195, 206);
+        --color3: rgb(58, 149, 161);
+        --color4: rgb(25, 108, 119);
+        --color5: rgb(11, 67, 75);
+        --colort1: rgba(165, 238, 247, 0.171);
+        --colort2: rgb(11, 67, 75, 0.171);
+}
+
+/* mobile first */
+    /* body*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            height: 100vh;
+            width: 100vw;
+        }
+        body{
+            /*layout*/
+                display: grid;
+                grid-template: 20% 60% 20% / 1fr;
+
+            /*box*/
+                height: 100vh;
+                width: 100vw;
+            
+            /*style*/
+                background: url(../image/shutterstock_1398425048_648x430.png) center no-repeat;
+                background-size: cover;
+        }
+        h1, p{text-shadow: 2px 2px 6px var(--color1);}
+        .title{
+            /*layout*/
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            
+            /*style*/
+                text-align: center;
+        }
+    /* /body*/
+
+    /* header*/
+        header{
+            /*layout*/
+                display: grid;
+                grid-template: 80% 20% / 1fr;
+            
+            /*box*/
+                height: 100%;
+
+            /*style*/
+             background-color: var(--colort1);
+        }
+        header > h1{font-family: var(--font2);}
+    /* /header*/
+
+    /* main*/
+        main{
+            /*layout*/
+                display: grid;
+                grid-template: 20% 1fr / auto;
+
+            /*style*/
+                background-image: linear-gradient(to right, var(--colort1), var(--colort2))
+        }
+        main > form{
+            display: grid;
+            grid-template: repeat(4, 10%) 1fr / 1fr;
+        }
+        main > form > p > label{width: 100%;}
+        main > form > p > label > #iemail, #isenha{
+            border-radius: 10px;
+            text-align: center;
+            width: clamp(170px, 70%, 350px);
+        }
+        main > form > .botao{
+            /*box*/
+                margin: auto;
+                padding: 1% 20%;
+
+            /*style*/
+                background-color: rgba(127, 255, 212, 0.685);
+                border-radius: 6px;
+            
+            /*effect*/
+                transition: backgound-color .4s ease, transform .3s ease;
+        }
+        main > form > .botao:hover{
+            background-color: rgb(127, 255, 212);
+            transform: scale(1.02);
+        }
+        main > form > #checkbox{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+        main > form > #checkbox > #psalvar, #probo{font-size: 1.3em;}
+    /* /main*/
+    /* footer*/
+        footer{background-color: var(--colort1);}
+        footer > p{
+            align-items: center;
+            font-size: 0.8em;
+        }
+        footer > #p1{display: flex;}
+        footer > #p1::before, #p1::after{
+            border-bottom: 1px solid;
+            content: "";
+            flex: 1;
+            margin: 0 10px;
+        }
+        footer > #logos{
+            /*layout*/
+                display: flex;
+                justify-content: space-between;
+
+            /*box*/
+                height: 30%;
+                margin: 1% 0;
+                padding: 1% 20%;
+                width: 100%;
+        }
+        footer > #logos > a{text-decoration: none;}
+        footer > #logos > a:hover{transform: scale(1.02);}
+        footer > #logos > a{justify-content: space-around;}
+        footer > #logos > a > .llogo{
+            /*box*/
+                height: 100%;
+                width: 100%;
+            
+            /*style*/
+                background-color: rgba(255, 255, 255, 0.750);
+                border-radius: 40px;
+        }
+        footer > #p2{text-align: center;}
+    /* /footer*/
+    /* landscape */
+        @media screen and (orientation: landscape){
+            /* body */
+                header, main, footer{background-color: var(--colort2);}
+            /* /body */
+            /* header */
+                header{font-size: 0.65em;}
+            /* /header */
+            /* main */
+               main > form{grid-template: repeat(4, 20%) 1fr / 1fr;}
+               main > form > .botao{padding: 0.1% 12%;}
+               main > form > #checkbox > #psalvar, #probo{font-size: 1em;}
+            /* /main */
+            /* footer */
+                footer > #logos{justify-content: space-evenly;}
+                footer > #logos > a{height: 50px;}
+                footer > #p2{text-align: start;}
+            /* /footer */
+        }
+    /* /landscape */
+/* /mobile first */
+/* others */
+    @media screen and (min-width: 1000px) {
+        /* body */
+            html{
+                display: flex; 
+                background-color: var(--color2);
+                align-items: center;
+                justify-content: center;
+                border-radius: 20px;
+            }
+            body{
+                border-radius: 20px;
+                max-height: 950px;
+                max-width: 900px;
+            }
+        /* /body */
+        /* header */
+            header{
+                border-radius: 20px 20px 0 0;
+                font-size: 1.3em;
+            }
+        /* /header */
+        /* main */
+            main > h1{font-size: 2.2em;}
+            main > form{grid-template: repeat(4, 15%) 1fr / 1fr;}
+            main > form > p > label > #iemail, #isenha{
+                height: 26px;
+                width: 60%;
+            }
+        /* /main */
+        /* footer */
+            footer{border-radius: 0 0 20px 20px;}
+            footer > #p2{text-align: center;}
+        /* /footer */
+    }
+/* /others */
