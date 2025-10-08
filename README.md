@@ -1,46 +1,34 @@
-# Site [Carpox-v2](https://davidrichardhw.github.io/Carpox-v2/)
+# Site [Carpox-v2](https://davidrichardhw.github.io/Carpox-v2/):
 
-Melhoria da página de login, foi desenvolvido por mim [David "hawize" Richard](https://github.com/davidrichardhw) como parte dos meus estudos em HTML e CSS. O objetivo principal foi colocar em prática alguns conceitos de desenvolvimento web aprendidos.
+Segunda versão da página de login [Carpox](https://davidrichardhw.github.io/Carpox/). Melhor desemvolvido graças aos novos conceitos aprendidos. 
+
+Aba de login com email e senha. Tem também duas checkbox, uma para salvar dados e outra é um fake captchar.
 
 
-## Tecnologias & Conceitos Aplicados
+## Tecnologias e Conceitos aplicados:
 
-- Estruturação com HTML5
-
-- Alinhamento de divs usando CSS
-
-- Uso de id e class
-
-- Criação de cabeçalho
-
-- Aplicação de imagens de fundo em DIV
-
-- Pseudo-classes CSS
-
-- Aplicação de formulários
-
+- Efeito gradiente
+- Efeitos de transição
+- Favicon
+- Flexbox e Grid
+- Formulários
+- IDs, Class e Pseudo-classes
+- Imagens de fundo
 - Links internos e externos
 
-- Responsividade com CSS
-
-- Uso de favicon
-
-- Uso de tags semânticas: strong, header, main, footer
 
 
-## Estrutura
-
-### O projeto é composto por:
+## Estrutura do projto:
 
 - index.html (HTML: Estrutura do site)
-
 - styles/style.css (CSS: Estilização)
-
-- images (Pasta de imagens)
-
+- image (Pasta de imagens)
 - data (Pasta de Documentação)
 
 
-## Link do Site
 
-Você pode acessar meu site no GitHub Pages clicando aqui > [Carpox-v2](https://davidrichardhw.github.io/Carpox-v2/) < Fique a vontade para deixar dicas e opiniões. 😁
+## Link do Site:
+
+Você pode acessar meu site no GitHub Pages clicando aqui > [Carpox-v2](https://davidrichardhw.github.io/Carpox-v2/) <
+
+Fique a vontade para deixar dicas e opiniões. 😁
